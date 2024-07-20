@@ -1,0 +1,5 @@
+paho-mqtt
+pickle-mixin
+numpy
+langchain-openai
+python-dotenv
