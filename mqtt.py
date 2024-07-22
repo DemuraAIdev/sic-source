@@ -59,13 +59,6 @@ aqi_scaler = load_model('AQ_scaler.pkl')
 aqi_model = load_model('AQ_model.pkl')
 aqi_poly = load_model('AQ_poly.pkl')
 
-# make random data for testing 200 data points of temperature
-for i in range(200):
-    temperature = np.random.randint(33, 34)
-    humidity = np.random.randint(50, 60)
-    aqi = np.random.randint(1600, 1900)
-    dump_data(temperature, humidity, aqi)
-
 
 def on_subscribe(client,userdata, mid, reason_code_list, properties):
     # Since we subscribed only for a single channel, reason_code_list contains
